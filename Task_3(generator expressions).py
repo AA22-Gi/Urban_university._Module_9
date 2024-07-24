@@ -18,5 +18,5 @@ first_result = (abs(len(elem[0]) - len(elem[1])) for elem in zip(first, second) 
 second_result = (len(first[i]) == len(second[i]) for i in range(len(first)))
 
 if __name__ == '__main__':
-    list(first_result) == [1, 2]
-    list(second_result) == [False, False, True]
+    assert list(first_result) == [1, 2]
+    assert list(second_result) == [False, False, True]
