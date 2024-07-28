@@ -18,6 +18,7 @@ def is_prime(func):
         for i in range(2, result):
             if result % i == 0:
                 count = False
+                break
         print('Простое' if count else 'Составное')
         return result
 
